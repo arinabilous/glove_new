@@ -1,0 +1,134 @@
+/*
+Description:
+
+		2 - Tags styles and General styles
+		3 - header
+		4 - .content
+		5 - footer
+		* - @media rules
+*/
+
+
+/* 2 - BEGIN of Tags and General styles ---------------------------------------------------------- */
+
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+a:active {
+    opacity: 0.65;
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+a:visited {
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+button:hover,
+input:hover,
+select:hover {
+    opacity: 0.8;
+}
+
+strong {
+    font-weight: 500;
+}
+
+em {
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 200%;
+    background: pink;
+}
+
+.navigation {
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    display: -webkit-box;
+    display: flex;
+    padding: 5rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: -100%;
+}
+
+.navigation.navigation--scrolled {
+    padding: 2.5rem 5rem;
+    top: 0;
+}
+
+.navigation.navigation--scrolled .navigation__effect:before {
+    bottom: -35%;
+    -webkit-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.navigation__effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.navigation__effect:before {
+    -webkit-transition: all 1s cubic-bezier(0.9, 0, 0.5, 1) 0s;
+    transition: all 1s cubic-bezier(0.9, 0, 0.5, 1) 0s;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-25%) scaleY(1) scaleX(1.2);
+    transform: translateX(-25%) scaleY(1) scaleX(1.2);
+    bottom: 100%;
+    width: 150%;
+    height: 180%;
+    background-color: #fff;
+    display: block;
+    z-index: -1;
+}
+
+
+.menu_btn {
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
