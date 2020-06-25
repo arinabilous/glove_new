@@ -8,7 +8,6 @@ Description:
 		* - @media rules
 */
 
-
 /* 2 - BEGIN of Tags and General styles ---------------------------------------------------------- */
 
 body {
@@ -17,6 +16,7 @@ body {
     font-size: 14px;
     color: #000;
     font-weight: normal;
+    font-family: Comfortaa;
 }
 
 a {
@@ -65,13 +65,17 @@ img {
     height: auto;
 }
 
-
 body,
 html {
     margin: 0;
     padding: 0;
     min-height: 200%;
-    background: pink;
+    /*background: black;*/
+}
+
+header {
+    position: fixed;
+    z-index: 100;
 }
 
 .navigation {
@@ -102,8 +106,9 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     overflow: hidden;
+    z-index: 100;
 }
 
 .navigation__effect:before {
@@ -123,6 +128,58 @@ html {
     z-index: -1;
 }
 
+/*navigation__menu*/
+
+.navigation__menu {
+    z-index: 150;
+    transition: 0.5s;
+    animation-delay: 0.9s;
+}
+
+.social {
+    position: fixed;
+    top: 80vh;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+    min-height: 154px;
+}
+
+.social:before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    border-left: 1px solid #384262;
+    top: -60px;
+    left: 55%;
+}
+
+.social .icon path {
+    transition: 0.5s;
+}
+
+.social .icon:hover path {
+    fill: #7EDCBF;
+}
+
+.nav_lang {
+    position: fixed;
+    top: 60px;
+    right: 146px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #384262;
+    transition: 0.5s;
+}
+
+.nav_lang:hover {
+    text-decoration: underline;
+}
 
 .menu_btn {
     position: fixed;
@@ -131,4 +188,147 @@ html {
     display: flex;
     flex-direction: column;
     z-index: 100;
+    cursor: pointer;
+}
+
+.menu_btn:after {
+    position: absolute;
+    content: '';
+    height: 30px;
+    border-left: 1px solid #384262;
+    bottom: -60px;
+    left: 55%;
+}
+
+.navigation__logo {
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    z-index: 9999;
+}
+
+header .menu_btn.text span {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #384262;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+/*content*/
+
+.top_section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top_section .row {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.top_svg:nth-child(1) {
+    position: absolute;
+    top: 56px;
+    right: 60px;
+    z-index: 1;
+}
+
+.top_svg:nth-child(2) {
+    position: absolute;
+    top: 160px;
+    left: -20%;
+    z-index: 1;
+}
+
+.top_svg:nth-child(2) path {
+    fill: #FFEFD6 !important;
+    fill-opacity: 0.35;
+}
+
+#svg-element {
+    overflow: visible;
+    width: 1187px;
+    height: auto;
+}
+
+/*top_info_section*/
+
+.top_info_section {
+    width: 50%;
+    position: relative;
+}
+
+.top_info_section .title {
+    font-family: Playfair Display;
+    font-size: 48px;
+    line-height: 64px;
+    color: #384262;
+}
+
+.top_info_section .sub_title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #384262;
+    margin: 30px 0;
+    max-width: 453px;
+}
+
+/*custom_btn*/
+
+.custom_btn {
+    width: 222px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(126, 220, 191, 0.3);
+    border-radius: 22.5px;
+}
+
+.custom_btn a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #384262;
+}
+
+/*.video_section*/
+
+.video_section {
+    width: 50%;
+    position: relative;
+}
+
+/*about_us*/
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+/*main_title*/
+.main_title {
+    font-family: Playfair Display;
+    font-size: 48px;
+    line-height: 64px;
+    color: #384262;
+}
+
+.about_us .content {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
+    color: #384262;
+    max-width: 900px;
+    margin-top: 30px;
 }
