@@ -9,8 +9,8 @@
         });
 
 
-
-
+        AOS.init();
+        new WOW().init();
 
         $('.review_slider').slick({
             dots: true,
@@ -32,8 +32,8 @@
             element_warm.transform(([x, y]) => [x, y, y]);
             let offset = 0;
             animate();
-            function animate()
-            {
+
+            function animate() {
                 element_warm.transform(([x, y, oy]) => [x, oy + 4 * Math.sin(x / 48 + offset), oy]);
                 offset += 0.2;
                 requestAnimationFrame(animate);

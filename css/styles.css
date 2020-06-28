@@ -294,7 +294,6 @@ header .menu_btn.text span {
     justify-content: center;
     background: rgba(126, 220, 191, 0.3);
     border-radius: 23px;
-    transition: 0.2s;
 }
 
 .custom_btn a {
@@ -302,7 +301,6 @@ header .menu_btn.text span {
     line-height: 16px;
     color: #384262;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 .custom_btn:hover {
@@ -458,7 +456,7 @@ header .menu_btn.text span {
 }
 
 .products .custom_btn.more {
-    margin: 50px auto;
+    margin: 0 auto 100px ;
 }
 
 /*our_services*/
@@ -624,28 +622,29 @@ header .menu_btn.text span {
 
 .reviews .slick-dots li {
     margin: 0 8px;
-    max-height: 16px;
-    width: 16px;
     display: flex;
+    max-width: 16px;
+    max-height: 16px;
     justify-content: center;
 }
 
 .reviews li button {
     display: block;
-    width: 10px;
-    height: 10px;
+    max-width: 10px;
+    max-height: 10px;
     border-radius: 50%;
     border: none;
     background: rgba(56, 66, 98, 0.5);
     /*background-image: url("../img/dot.png");*/
     text-indent: 9999px;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .reviews .slick-dots li.slick-active {
     margin: -3px 8px 0 8px;
-    max-height: 16px;
     border-radius: 50%;
+    max-width: 16px;
+    max-height: 16px;
     border: 3px solid rgba(255, 185, 72, 0.5);
     padding: 0px;
 }
@@ -701,7 +700,6 @@ header .menu_btn.text span {
     text-align: center;
     margin: 0 auto;
     color: #384262;
-    transition: 0.5s;
 }
 
 .contact .contact_form button.custom_btn:hover {
