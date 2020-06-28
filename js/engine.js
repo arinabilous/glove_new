@@ -6,7 +6,20 @@
 
         $('.menu_btn').on('click', function () {
             $('.navigation').toggleClass('navigation--scrolled');
+            $(this).toggleClass('active');
+            var $button = $('#button-nav');
+
+
+            if ($button.hasClass('open')) {
+                $button.removeClass('open');
+            } else {
+                $button.addClass('open');
+            }
+
         });
+        if ($('header .sub-menu').children('li').length > 10) {
+            $('header .sub-menu').children('li:nth-child(11)').parent().addClass('active');
+        }
 
 
         AOS.init();
