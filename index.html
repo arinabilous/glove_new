@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link type="text/css" rel="Stylesheet" href="css/reset.css">
-    <link type="text/css" rel="Stylesheet" href="css/animate.css">
+    <!--<link type="text/css" rel="Stylesheet" href="css/animate.css">-->
     <link type="text/css" rel="Stylesheet" href="css/slick.css">
     <link type="text/css" rel="Stylesheet" href="css/styles.css">
 
@@ -128,10 +128,10 @@
 </header><!-- END of header -->
 <!-- END of header -->
 
-<div class="content">
+<div class="content" style="overflow: hidden">
     <section class="top_section">
         <div class="top_svg">
-            <svg id="svg-top-element" width="1187" height="886" viewBox="0 0 1187 886" fill="none"
+            <svg class="svg-element" viewBox="0 0 1187 886" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M114.67 403.465C143.138 356.563 129.74 333.106 128.065 272.808C126.391 212.51 106.296 189.053 163.228 138.8C220.16 88.5466 313.93 83.5214 313.93 83.5214C313.93 83.5214 355.791 81.8459 451.235 108.647C546.679 135.449 576.818 132.099 576.818 132.099C576.818 132.099 683.983 123.724 735.891 76.8295C787.799 29.9347 886.591 -11.9525 968.638 3.12643C1050.68 18.2053 1167.9 71.8044 1146.12 187.388C1124.34 302.971 1097.56 388.398 1115.98 457.078C1134.4 525.758 1229.15 665.761 1165.01 757.4C1100.87 849.038 979.647 851.253 859.434 823.63C739.221 796.008 750.988 781.106 642.148 776.081C533.308 771.056 476.332 803.825 476.332 803.825C476.332 803.825 370.842 889.253 240.235 885.904C109.628 882.555 -10.9326 758.597 0.790109 634.647C12.5128 510.698 86.2041 450.367 114.67 403.465Z"
                       fill="url(#paint0_linear)" fill-opacity="0.2"/>
@@ -152,7 +152,7 @@
             </svg>
         </div>
         <div class="top_svg">
-            <svg id="svg-left-element" width="742" height="802" viewBox="0 0 742 802" fill="none"
+            <svg class="svg-element" viewBox="0 0 742 802" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M482.543 637.201C452.644 636.567 445.216 649.277 417.194 666.509C389.171 683.741 383.57 699.603 344.342 686.463C305.115 673.324 277.211 630.476 277.211 630.476C277.211 630.476 265.024 611.194 251.698 558.883C238.373 506.571 228.586 493.273 228.586 493.273C228.586 493.273 195.454 445.026 159.175 433.339C122.897 421.651 76.2245 386.486 61.0073 343.688C45.7901 300.891 39.1952 231.007 99.7019 209.755C160.209 188.503 207.848 177.847 235.266 150.436C262.684 123.025 303.007 40.1765 363.742 45.4332C424.477 50.6898 458.525 107.246 478.205 171.46C497.886 235.675 487.646 234.19 514.903 286.88C542.16 339.571 573.15 357.507 573.15 357.507C573.15 357.507 642.209 383.952 676.184 446.443C710.158 508.935 684.439 599.59 622.709 627.86C560.979 656.129 512.446 637.833 482.543 637.201Z"
                       fill="url(#paint0_linear)" fill-opacity="0.5"/>
@@ -181,10 +181,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="video_section">
-                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/db186067526389.5b3cd092f0fa9.gif"
-                         srcset="https://mir-s3-cdn-cf.behance.net/project_modules/disp/db186067526389.5b3cd092f0fa9.gif 600w, https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/db186067526389.5b3cd092f0fa9.gif 800w"
-                         sizes="(max-width: 800px) 100vw, 800px" alt="" class="ImageElement-image-2K6">
+                <div class="video_section"
+                     style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/db186067526389.5b3cd092f0fa9.gif);">
                 </div>
             </div>
         </div>
@@ -205,11 +203,50 @@
         </div>
     </section>
     <section class="products">
+        <div class="svg">
+            <svg class="svg-element" viewBox="0 0 1482 1109" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M1338.84 603.97C1303.3 662.679 1320.03 692.034 1322.12 767.515C1324.21 842.997 1349.3 872.352 1278.22 935.252C1207.14 998.153 1090.06 1004.44 1090.06 1004.44C1090.06 1004.44 1037.8 1006.54 918.634 972.995C799.468 939.446 761.839 943.64 761.839 943.64C761.839 943.64 628.041 954.123 563.234 1012.83C498.427 1071.54 375.083 1123.96 272.644 1105.09C170.205 1086.22 23.8642 1019.12 51.0394 874.448C78.2146 729.773 111.654 622.841 88.6713 536.876C65.6885 450.911 -52.6225 275.665 27.4504 160.963C107.523 46.2608 258.876 43.4892 408.966 78.064C559.055 112.639 544.363 131.291 680.263 137.583C816.163 143.875 887.288 102.858 887.288 102.858C887.288 102.858 1019 -4.07367 1182.06 0.120215C1345.12 4.3141 1495.65 159.472 1481.01 314.629C1466.38 469.787 1374.4 545.261 1338.84 603.97Z"
+                      fill="#384262" fill-opacity="0.1"/>
+                <defs>
+                    <linearGradient id="paint0_linear" x1="50.388" y1="969.266" x2="924.328" y2="-27.5233"
+                                    gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#384262"/>
+                        <stop offset="1" stop-color="#94A1CB"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="svg_right">
+            <svg viewBox="0 0 2792 3017" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1631.03 1284.62C1581.45 1283.56 1569.13 1304.64 1522.66 1333.22C1476.2 1361.79 1466.91 1388.09 1401.86 1366.3C1336.81 1344.52 1290.54 1273.46 1290.54 1273.46C1290.54 1273.46 1270.33 1241.49 1248.24 1154.75C1226.14 1068 1209.91 1045.95 1209.91 1045.95C1209.91 1045.95 1154.97 965.949 1094.81 946.569C1034.66 927.188 957.263 868.877 932.03 797.909C906.796 726.942 895.861 611.06 996.194 575.819C1096.53 540.579 1175.52 522.909 1220.99 477.455C1266.45 432.001 1333.32 294.621 1434.03 303.338C1534.74 312.055 1591.2 405.836 1623.83 512.318C1656.47 618.799 1639.49 616.338 1684.69 703.709C1729.88 791.081 1781.27 820.823 1781.27 820.823C1781.27 820.823 1895.79 864.674 1952.12 968.299C2008.46 1071.92 1965.81 1222.25 1863.45 1269.13C1761.09 1316 1680.61 1285.66 1631.03 1284.62Z"
+                      fill="#FFEFD6" fill-opacity="0.3"/>
+                <path d="M1816.3 2398.83C1703.74 2396.44 1675.77 2444.29 1570.28 2509.16C1464.79 2574.04 1443.7 2633.75 1296.02 2584.29C1148.34 2534.82 1043.3 2373.51 1043.3 2373.51C1043.3 2373.51 997.417 2300.92 947.25 2103.99C897.083 1907.06 860.239 1857 860.239 1857C860.239 1857 735.51 1675.36 598.934 1631.36C462.359 1587.36 286.654 1454.98 229.367 1293.86C172.08 1132.75 147.253 869.659 375.039 789.652C602.824 709.646 782.168 669.53 885.388 566.337C988.609 463.143 1140.41 151.25 1369.05 171.039C1597.7 190.829 1725.88 403.741 1799.97 645.485C1874.06 887.23 1835.51 881.641 1938.12 1080C2040.73 1278.36 2157.4 1345.88 2157.4 1345.88C2157.4 1345.88 2417.38 1445.44 2545.28 1680.7C2673.19 1915.96 2576.36 2257.24 2343.97 2363.66C2111.58 2470.09 1928.87 2401.21 1816.3 2398.83Z"
+                      fill="#FFEFD6" fill-opacity="0.4"/>
+                <defs>
+                    <linearGradient id="paint0_linear" x1="1955.01" y1="1175.02" x2="1015.23" y2="988.688"
+                                    gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFEFD6"/>
+                        <stop offset="1" stop-color="#FFB948"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="2551.84" y1="2150" x2="418.256" y2="1726.99"
+                                    gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFEFD6"/>
+                        <stop offset="1" stop-color="#FFB948"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+
+        </div>
         <div class="container">
             <div class="row">
                 <div class="product_card col-md-6">
-                    <div class="iamge">
+                    <div class="iamge tilt" data-tilt data-tilt-max="10" data-tilt-speed="700"
+                         data-tilt-perspective="700" data-tilt-glare="true" data-tilt-max-glare="0.2">
                         <img src="images/image1.jpg">
+                        <div class="custom_btn">
+                            <a href="#">переглянути</a>
+                        </div>
                     </div>
                     <div class="title">
                         Nike Your Look
@@ -219,8 +256,12 @@
                     </div>
                 </div>
                 <div class="product_card col-md-6">
-                    <div class="iamge">
+                    <div class="iamge tilt" data-tilt data-tilt-max="10" data-tilt-speed="700"
+                         data-tilt-perspective="700" data-tilt-glare="true" data-tilt-max-glare="0.2">
                         <img src="images/image2.jpg">
+                        <div class="custom_btn">
+                            <a href="#">переглянути</a>
+                        </div>
                     </div>
                     <div class="title">
                         GEM
@@ -231,8 +272,12 @@
                     </div>
                 </div>
                 <div class="product_card col-md-6">
-                    <div class="iamge">
+                    <div class="iamge tilt" data-tilt data-tilt-max="10" data-tilt-speed="400"
+                         data-tilt-perspective="700" data-tilt-glare="true" data-tilt-max-glare="0.2">
                         <img src="images/image3.jpg">
+                        <div class="custom_btn">
+                            <a href="#">переглянути</a>
+                        </div>
                     </div>
                     <div class="title">
                         YogiFood
@@ -242,8 +287,12 @@
                     </div>
                 </div>
                 <div class="product_card col-md-6">
-                    <div class="iamge">
+                    <div class="iamge tilt" data-tilt data-tilt-max="10" data-tilt-speed="700"
+                         data-tilt-perspective="700" data-tilt-glare="true" data-tilt-max-glare="0.2">
                         <img src="images/image4.jpg">
+                        <div class="custom_btn">
+                            <a href="#">переглянути</a>
+                        </div>
                     </div>
                     <div class="title">
                         Yaposha
@@ -253,7 +302,9 @@
                     </div>
                 </div>
             </div>
-            <div class="custom_btn">
+
+
+            <div class="custom_btn more">
                 <a href="#" class="custom_btn">
                     переглянути більше
                 </a>
@@ -261,7 +312,25 @@
         </div>
     </section>
     <section class="our_services">
+        <div class="svg">
+            <svg class="svg-element" viewBox="0 0 1007 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M849.372 363.762C838.053 402.37 851.941 416.492 864.465 458.952C876.99 501.412 895.615 514.278 864.788 560.6C833.962 606.922 768.568 628.074 768.568 628.074C768.568 628.074 739.268 637.115 666.705 636.004C594.141 634.894 573.449 642.923 573.449 642.923C573.449 642.923 499.209 668.963 471.307 711.967C443.405 754.972 381.388 803.204 320.508 807.898C259.627 812.593 166.626 796.555 160.289 710.489C153.953 624.423 156.837 558.803 130.9 513.541C104.962 468.279 11.5956 386.743 39.736 309.715C67.8764 232.688 153.222
+208.381 243.462 205.427C333.703 202.474 328.18 215.251 406.131 198.401C484.082 181.552 518.222 147.625 518.222 147.625C518.222 147.625 576.788 67.2435 669.816 45.1247C762.844 23.0059 871.447 88.3188 886.463 178.442C901.479 268.565 860.697 325.153 849.372 363.762Z"
+                      fill="url(#paint0_linear)" fill-opacity="0.15"/>
+                <defs>
+                    <linearGradient id="paint0_linear" x1="174.165" y1="764.318" x2="519.676" y2="68.2022"
+                                    gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#A6F8DE"/>
+                        <stop offset="1" stop-color="#7EDCBF"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
         <div class="container">
+            <div class="main_title">
+                Our Services
+            </div>
             <div class="row">
                 <div class="service_card col-md-3">
                     <div class="icon">
@@ -358,7 +427,9 @@
     <section class="reviews">
         <div class=container>
             <div class="svg">
-                <svg width="937" height="885" viewBox="0 0 937 885" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                <svg class="svg-element" width="937" height="885" viewBox="0 0 937 885" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M246.593 266.264C253.481 264.884 264.097 236.683 361.927 299.647C459.757 362.61 527.207 357.424 554.033 348.428C580.86 339.432 683.201 250.484 745.75 292.27C808.3 334.056 810.118 430.38 778.482 495.384C746.846 560.387 720.93 644.162 559.439 659.5C397.948 674.837 411.75 634.411 340.874 709.087C269.998 783.764 253.672 739.958 256.58 700.628C259.488 661.297 298.01 594.913 289.511 533.606C281.012 472.299 178.554 308.142 246.593 266.264Z"
                           fill="#7EDCBF" fill-opacity="0.5"/>
                     <path d="M218.268 243.735C226.036 242.179 238.006 210.378 348.329 281.38C458.651 352.383 534.713 346.535 564.965 336.391C595.217 326.246 710.625 225.94 781.162 273.062C851.699 320.184 853.749 428.807 818.073 502.111C782.397 575.414 753.172 669.887 571.061 687.183C388.949 704.479 404.514 658.89 324.588 743.102C244.662 827.314 226.251 777.915 229.53 733.562C232.81 689.209 276.25 614.349 266.666 545.214C257.082 476.078 141.541 290.961 218.268 243.735Z"
@@ -450,11 +521,66 @@
                         </div>
                     </div>
                 </div>
+                <div class="review_slider_container">
+                    <div class="row">
+                        <div class="col-md-6 content">
+                            <div class="title">
+                                Glove helps their businesses grow!
+                            </div>
+                            <div class="text">
+                                In every part of a business its crucial to find good cooperations. With Glove there is
+                                never
+                                any limitations of the projects or ideas that our business need to develop. The
+                                experience
+                                has been excellent, no matter if the task has been a quick fix or a larger project, the
+                                work
+                                has always been completed with professionalism and efficiently. Glove team is passionate
+                                about their work and always deliver a clean flawless result.
+                            </div>
+                            <div class="reviewer">
+                                <div class="row">
+                                    <div class="photo">
+                                        <div class="bg" style="background-image: url(images/reviewer_photo.jpg)"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="name">
+                                            A. Andreasson
+                                        </div>
+                                        <div class="info">
+                                            <div class="position">
+                                                CEO Billigaskal
+                                            </div>
+                                            <div class="site">
+                                                <a href="">Billigaskal.se</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 image">
+                            <div class="bg" style="background-image: url(images/MacbookPro.png)"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </section>
     <section class="contact">
+        <div class="svg">
+            <svg class="svg-element" viewBox="0 0 756 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M719.88 285.153C709.887 319.239 722.148 331.706 733.205 369.193C744.263 406.679 760.706 418.038 733.49 458.934C706.275 499.83 648.541 518.504 648.541 518.504C648.541 518.504 622.673 526.486 558.61 525.506C494.546 524.525 476.278 531.614 476.278 531.614C476.278 531.614 410.734 554.603 386.1 592.571C361.466 630.538 306.714 673.12 252.965 677.265C199.215 681.409 117.108 667.25 111.514 591.265C105.92 515.281 108.466 457.347 85.5665 417.387C62.6672 377.427 -19.7627 305.442 5.08147 237.437C29.9256 169.432 105.274 147.972 184.944 145.365C264.614 142.757 259.738 154.037 328.558 139.162C397.378 124.286 427.519 94.3328 427.519 94.3328C427.519 94.3328 479.225 23.3671 561.356 3.83918C643.488 -15.6887 739.369 41.9737 752.626 121.54C765.884 201.107 729.878 251.066 719.88 285.153Z"
+                      fill="#FFEFD6" fill-opacity="0.3"/>
+                <defs>
+                    <linearGradient id="paint0_linear" x1="123.764" y1="638.789" x2="428.803" y2="24.2134"
+                                    gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFEFD6"/>
+                        <stop offset="1" stop-color="#FFB948"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
         <div class="container">
             <div class="main_title">
                 Let's Get In Touch!
@@ -482,6 +608,7 @@
             </div>
         </div>
     </section>
+
 </div><!-- END of .content -->
 <footer>
     <div class="container">
@@ -588,6 +715,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
 <script src="js/warp.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/slick.js"></script>

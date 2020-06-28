@@ -9,24 +9,7 @@
         });
 
 
-        const svg = document.getElementById('svg-top-element');
-        const warp = new Warp(svg);
-        warp.interpolate(8);
-        warp.transform(([x, y]) => [x, y, y]);
-        let offset = 0;
-        const svg_left = document.getElementById('svg-left-element');
-        const warp2 = new Warp(svg_left);
-        warp2.interpolate(4);
-        warp2.transform(([x, y]) => [x, y, y]);
 
-        function animate() {
-            warp.transform(([x, y, oy]) => [x, oy + 4 * Math.sin(x / 380 + offset), oy]);
-            warp2.transform(([x, y, oy]) => [x, oy + 8 * Math.sin(x / 192 + offset), oy]);
-            offset += 0.06;
-            requestAnimationFrame(animate);
-        }
-
-        animate();
 
 
         $('.review_slider').slick({
@@ -39,6 +22,22 @@
             autoplay: false,
             autoplaySpeed: 7000,
             speed: 1000
+        });
+
+
+        const svg = document.querySelectorAll('.svg-element');
+        svg.forEach(element => {
+            const element_warm = new Warp(element);
+            element_warm.interpolate(4);
+            element_warm.transform(([x, y]) => [x, y, y]);
+            let offset = 0;
+            animate();
+            function animate()
+            {
+                element_warm.transform(([x, y, oy]) => [x, oy + 4 * Math.sin(x / 48 + offset), oy]);
+                offset += 0.2;
+                requestAnimationFrame(animate);
+            }
         });
 
 

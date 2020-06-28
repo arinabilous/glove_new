@@ -13,7 +13,6 @@ a {
     color: inherit;
 }
 
-
 a:focus,
 a:visited {
     outline: none;
@@ -54,7 +53,12 @@ html {
     margin: 0;
     padding: 0;
     min-height: 200%;
-    /*background: black;*/
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
 }
 
 .bg {
@@ -64,7 +68,7 @@ html {
 }
 
 section {
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 header {
@@ -231,9 +235,14 @@ header .menu_btn.text span {
 
 .top_svg:nth-child(1) {
     position: absolute;
-    top: 56px;
-    right: 60px;
+    top: 6%;
+    right: 4%;
     z-index: 1;
+}
+
+.top_svg:nth-child(1) svg {
+    width: auto;
+    height: 90vh;
 }
 
 .top_svg:nth-child(2) {
@@ -243,15 +252,14 @@ header .menu_btn.text span {
     z-index: 1;
 }
 
+.top_svg:nth-child(2) svg {
+    width: auto;
+    height: 90vh;
+}
+
 .top_svg:nth-child(2) path {
     fill: #FFEFD6 !important;
     fill-opacity: 0.35;
-}
-
-#svg-element {
-    overflow: visible;
-    width: 1187px;
-    height: auto;
 }
 
 /*top_info_section*/
@@ -285,22 +293,41 @@ header .menu_btn.text span {
     align-items: center;
     justify-content: center;
     background: rgba(126, 220, 191, 0.3);
-    border-radius: 22.5px;
+    border-radius: 23px;
+    transition: 0.2s;
 }
 
 .custom_btn a {
     font-size: 14px;
     line-height: 16px;
     color: #384262;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.custom_btn:hover {
+    background: #7EDCBF;
+}
+
+.custom_btn:hover a {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
 /*.video_section*/
 
 .video_section {
-    width: 50%;
-    position: relative;
+    /*width: 50%;*/
+    position: absolute;
+    top: -30%;
+    right: -5%;
+    min-height: 45vh;
+    width: 60%;
 }
-
 
 /*about_us*/
 
@@ -308,7 +335,7 @@ header .menu_btn.text span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 
 /*main_title*/
@@ -330,6 +357,36 @@ header .menu_btn.text span {
 }
 
 /*products */
+
+.products {
+    padding-top: 100px;
+    position: relative;
+}
+
+.products .svg {
+    position: absolute;
+    top: -10%;
+    left: -53%;
+    overflow: hidden;
+
+}
+
+.products .svg svg {
+    width: auto;
+    height: 115vh;
+}
+
+.products .svg_right {
+    position: absolute;
+    bottom: -92%;
+    right: -62%;
+    z-index: -1;
+}
+
+.products .svg_right svg {
+    width: auto;
+    height: 325vh;
+}
 
 .products .container {
     margin: 0 auto;
@@ -363,16 +420,77 @@ header .menu_btn.text span {
     color: #384262;
 }
 
-.products .custom_btn {
-    margin: 100px auto;
+.product_card .image {
+    position: relative;
+    height: 100%;
+}
+
+.products .product_card .custom_btn {
+    max-width: 160px;
+    position: absolute;
+    right: 0px;
+    bottom: 135px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+    background: #7EDCBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: translateZ(50px) translateY(-50%) translateX(-50%);
+}
+
+.products .product_card .custom_btn a {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.products .product_card:hover .custom_btn {
+    opacity: 1;
+    z-index: 5;
+}
+
+.products .tilt {
+    transform-style: preserve-3d;
+}
+
+.products .custom_btn.more {
+    margin: 50px auto;
 }
 
 /*our_services*/
+
+.our_services {
+    position: relative;
+}
+
+.our_services .svg {
+    position: absolute;
+    left: -30%;
+    top: 20%;
+}
+
+.our_services .svg svg {
+    width: auto;
+    height: 95vh;
+}
+
+.our_services .main_title {
+    text-align: center;
+    padding-bottom: 66px;
+}
 
 .our_services .service_card {
     min-height: 240px;
     margin-bottom: 35px;
     padding: 0 30px 0 0;
+}
+
+.our_services .service_card .icon {
+    min-height: 100px;
 }
 
 .our_services .title {
@@ -454,7 +572,6 @@ header .menu_btn.text span {
     margin: 30px 0;
 }
 
-
 .reviews .reviewer .content {
     width: 80%;
     display: flex;
@@ -496,28 +613,63 @@ header .menu_btn.text span {
 }
 
 .reviews .slick-dots {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
     position: absolute;
     right: 20%;
-    bottom: -30px;
+    bottom: -5%;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    list-style-type: none;
 }
 
-.reviews .slick-dots li button {
-    background: rgba(255, 185, 72, 0.5);
+.reviews .slick-dots li {
+    margin: 0 8px;
+    max-height: 16px;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews li button {
+    display: block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    color: transparent;
-    -webkit-appearance: none;
+    border: none;
+    background: rgba(56, 66, 98, 0.5);
+    /*background-image: url("../img/dot.png");*/
+    text-indent: 9999px;
+    transition: 0.3s;
 }
 
+.reviews .slick-dots li.slick-active {
+    margin: -3px 8px 0 8px;
+    max-height: 16px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 185, 72, 0.5);
+    padding: 0px;
+}
+
+.reviews .slick-dots li.slick-active button {
+    background: rgba(255, 185, 72, 0.5);
+}
 
 /*contact*/
 .contact {
     text-align: center;
     margin-top: 100px;
+    position: relative;
+}
+
+.contact .svg {
+    position: absolute;
+    left: -30%;
+    top: -10%;
+}
+
+.contact .svg svg {
+    width: auto;
+    height: 80vh;
 }
 
 .contact .information {
@@ -541,16 +693,19 @@ header .menu_btn.text span {
 .contact .contact_form button.custom_btn {
     cursor: pointer;
     border: none !important;
-
     font-family: Comfortaa;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-
     text-align: center;
     margin: 0 auto;
     color: #384262;
+    transition: 0.5s;
+}
+
+.contact .contact_form button.custom_btn:hover {
+    color: #fff;
 }
 
 .contact .contact_form .form-group {
@@ -568,7 +723,6 @@ header .menu_btn.text span {
     outline: 0;
     box-shadow: 0 0 0 0rem transparent;
 }
-
 
 .contact .contact_form .form-control {
     display: block;
@@ -679,6 +833,15 @@ footer .container {
     margin-bottom: 10px;
 }
 
+.footer_col a {
+    transition: 0.3s;
+}
+
+.footer_col a:hover {
+    color: #7EDCBF;
+    text-decoration: none;
+}
+
 .footer_col .address {
     font-family: Comfortaa;
     font-style: normal;
@@ -764,3 +927,7 @@ footer .copyright .text {
     color: #384262;
 
 }
+
+
+
+
