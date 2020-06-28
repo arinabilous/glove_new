@@ -158,7 +158,6 @@ header {
     width: 40%;
     text-align: right;
     padding-right: 15%;
-    /*position: relative;*/
 }
 
 .navigation__menu .menu:before {
@@ -181,7 +180,6 @@ header {
     position: relative;
     z-index: 10;
     text-decoration: none;
-    transition: all .3s;
 }
 
 .navigation__menu .menu li:hover a.link {
@@ -231,7 +229,6 @@ header {
     line-height: 27px;
     text-align: right;
     color: #384262;
-    transition: all .3s;
     display: block;
     margin-bottom: 30px;
 }
