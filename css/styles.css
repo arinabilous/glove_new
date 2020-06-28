@@ -77,16 +77,14 @@ header {
 }
 
 .navigation {
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition:  0.2s ease-in-out 0.2s;
+    transition:  0.2s ease-in-out 0.2s;
     display: -webkit-box;
-
     padding: 5rem;
     position: fixed;
     width: 100%;
     left: 0;
-    top: -100%;
-    display: none;
+    top: -150%;
 }
 
 .navigation.navigation--scrolled {
@@ -94,6 +92,7 @@ header {
     top: 0;
     display: flex;
     justify-content: flex-end;
+
 }
 
 .navigation.navigation--scrolled .navigation__effect:before {
@@ -131,24 +130,25 @@ header {
 
 /*navigation__menu*/
 
-.navigation__menu {
+.navigation .navigation__menu {
+    display: none;
+    margin-top: -100%;
+    visibility: hidden !important;
+}
+
+.navigation .navigation__menu.fadeInUp {
+    margin-top: 0%;
+    visibility: visible !important;
     z-index: 150;
-    transition: 0.5s;
-    animation-delay: 0.9s;
     position: relative;
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    display: none;
-}
-
-.navigation__menu.fadeInUp {
-
     display: block;
     animation: nav 1s;
 }
 
-.navigation_container {
+.navigation .navigation_container {
     position: relative;
     width: 100%;
     display: flex;
@@ -157,17 +157,17 @@ header {
     margin-top: 100px;
 }
 
-.navigation__menu ul {
+.navigation.navigation--scrolled .navigation__menu ul {
     list-style: none;
 }
 
-.navigation__menu .menu {
+.navigation.navigation--scrolled .navigation__menu .menu {
     width: 40%;
     text-align: right;
     padding-right: 15%;
 }
 
-.navigation__menu .menu:before {
+.navigation.navigation--scrolled .navigation__menu .menu:before {
     position: absolute;
     top: -25%;
     right: 40%;
@@ -177,7 +177,8 @@ header {
     content: '';
 }
 
-.navigation__menu .menu li a.link {
+
+.navigation.navigation--scrolled .navigation__menu .menu li a.link {
     padding: 33px 0;
     display: block;
     font-size: 48px;
@@ -189,12 +190,12 @@ header {
     text-decoration: none;
 }
 
-.navigation__menu .menu li:hover a.link {
+.navigation.navigation--scrolled .navigation__menu .menu li:hover a.link {
     text-decoration-line: underline;
     color: #7EDCBF;
 }
 
-.navigation__menu .menu li .sub-menu {
+.navigation.navigation--scrolled .navigation__menu .menu li .sub-menu {
     position: absolute;
     left: 5%;
     padding-right: 50%;
@@ -205,10 +206,10 @@ header {
     transition: all 0.3s;
 }
 
-.navigation__menu .menu li:hover .sub-menu {
+.navigation.navigation--scrolled .navigation__menu .menu li:hover .sub-menu {
     display: block;
     height: 100%;
-    animation: nav 1s;
+    animation: nav .5s;
 }
 
 @keyframes nav {
@@ -226,7 +227,7 @@ header {
     }
 }
 
-.navigation__menu .menu li .sub-menu.active {
+.navigation.navigation--scrolled .navigation__menu .menu li .sub-menu.active {
     list-style-type: none;
     counter-reset: section;
     -moz-column-count: 3;
@@ -237,7 +238,7 @@ header {
     column-gap: 20px;
 }
 
-.navigation__menu .menu li .sub-menu.active:before {
+.navigation.navigation--scrolled .navigation__menu .menu li .sub-menu.active:before {
     counter-increment: section;
     content: counter(section) ".";
     margin: 0 0 0 -34px;
@@ -248,7 +249,7 @@ header {
     height: 100%;
 }
 
-.navigation__menu .menu li:hover .sub-menu li a {
+.navigation.navigation--scrolled .navigation__menu .menu li:hover .sub-menu li a {
     font-size: 24px;
     line-height: 27px;
     text-align: right;
@@ -257,7 +258,7 @@ header {
     margin-bottom: 30px;
 }
 
-.navigation__menu .menu li:hover .sub-menu li:hover a {
+.navigation.navigation--scrolled .navigation__menu .menu li:hover .sub-menu li:hover a {
     color: #7EDCBF;
 }
 

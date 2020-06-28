@@ -8,11 +8,8 @@
             $('.navigation').toggleClass('navigation--scrolled');
 
 
-            function explode() {
-                $('.navigation__menu').toggleClass('fadeInUp');
-            }
+            $('.navigation__menu').toggleClass('fadeInUp');
 
-            setTimeout(explode, 200);
 
             $(this).toggleClass('active');
             var $button = $('#button-nav');
