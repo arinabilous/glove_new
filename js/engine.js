@@ -3,30 +3,6 @@
     $(document).ready(function () {
 
         /***********************************/
-
-        $('.menu_btn').on('click', function () {
-            $('.navigation').toggleClass('navigation--scrolled');
-
-
-            $('.navigation__menu').toggleClass('fadeInUp');
-
-
-            $(this).toggleClass('active');
-            var $button = $('#button-nav');
-
-
-            if ($button.hasClass('open')) {
-                $button.removeClass('open');
-            } else {
-                $button.addClass('open');
-            }
-
-        });
-        if ($('header .sub-menu').children('li').length > 10) {
-            $('header .sub-menu').children('li:nth-child(11)').parent().addClass('active');
-        }
-
-
         AOS.init();
         new WOW().init();
 
@@ -42,6 +18,25 @@
             speed: 1000
         });
 
+        $('.menu_btn').on('click', function () {
+            $('.navigation').toggleClass('navigation--scrolled');
+
+            $('.navigation__menu').toggleClass('fadeInUp');
+
+            $(this).toggleClass('active');
+            let $button = $('#button-nav');
+
+
+            if ($button.hasClass('open')) {
+                $button.removeClass('open');
+            } else {
+                $button.addClass('open');
+            }
+
+        });
+        if ($('header .sub-menu').children('li').length > 10) {
+            $('header .sub-menu').children('li:nth-child(11)').parent().addClass('active');
+        }
 
         const svg = document.querySelectorAll('.svg-element');
         svg.forEach(element => {

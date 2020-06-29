@@ -77,8 +77,8 @@ header {
 }
 
 .navigation {
-    -webkit-transition:  0.2s ease-in-out 0.2s;
-    transition:  0.2s ease-in-out 0.2s;
+    -webkit-transition: 0.2s ease-in-out 0.2s;
+    transition: 0.2s ease-in-out 0.2s;
     display: -webkit-box;
     padding: 5rem;
     position: fixed;
@@ -1152,3 +1152,108 @@ header .menu_btn.active:after {
 }
 
 
+/*page about_us______________________________________________________________________________________________*/
+
+
+.page_about_us .about_top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding-top: 60px;
+}
+
+.page_about_us .about_top .svg {
+    position: absolute;
+    top: -13%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+.page_about_us .about_top svg {
+    width: auto;
+    height: 75vh;
+}
+
+.page_about_us .about_info_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_about_us .about_info_section .title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #384262;
+}
+
+.page_about_us .about_info_section .sub_title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #384262;
+    margin-top: 30px;
+    max-width: 535px;
+}
+
+/*.about_us_team */
+
+
+.page_about_us .about_us_team {
+    padding: 100px 0;
+}
+
+.page_about_us .about_us_team .container {
+    max-width: 840px;
+}
+
+.page_about_us .about_us_team .person {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.page_about_us .about_us_team .person .photo {
+    width: 260px;
+    min-height: 325px;
+}
+
+.page_about_us .about_us_team .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.page_about_us .about_us_team .person .name {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: justify;
+    color: #384262;
+    margin: 20px 0 10px 0;
+}
+
+.page_about_us .about_us_team .person .position {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: justify;
+    color: #FFB948;
+}
+
+.page_about_us .contact {
+    margin-top: 0;
+}
