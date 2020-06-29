@@ -38,6 +38,11 @@
             $('header .sub-menu').children('li:nth-child(11)').parent().addClass('active');
         }
 
+        if ($('body .content').hasClass('.page')) {
+            alert(5);
+            $('body').find('.social').addClass('resize');
+        }
+
         const svg = document.querySelectorAll('.svg-element');
         svg.forEach(element => {
             const element_warm = new Warp(element);

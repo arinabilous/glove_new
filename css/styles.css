@@ -272,6 +272,9 @@ header {
     z-index: 100;
     min-height: 154px;
 }
+.social.resize {
+    top: 50vh;
+}
 
 .social:before {
     position: absolute;
@@ -1256,4 +1259,42 @@ header .menu_btn.active:after {
 
 .page_about_us .contact {
     margin-top: 0;
+}
+
+
+/*project_page_______________________________________________________________________________________*/
+.project_page .project_top {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_page .project_top .title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #384262;
+}
+
+.project_page .project_top .sub_title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #384262;
+    margin: 30px 0 40px 0;
+    max-width: 535px;
+}
+.project_page .project_top .custom_btn {
+    background: #FFFFFF;
+}
+.project_page .project_top .custom_btn a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #384262;
 }
