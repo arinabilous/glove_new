@@ -177,7 +177,6 @@ header {
     content: '';
 }
 
-
 .navigation.navigation--scrolled .navigation__menu .menu li a.link {
     padding: 33px 0;
     display: block;
@@ -272,6 +271,7 @@ header {
     z-index: 100;
     min-height: 154px;
 }
+
 .social.resize {
     top: 50vh;
 }
@@ -425,6 +425,7 @@ header .menu_btn.text span {
     justify-content: center;
     background: rgba(126, 220, 191, 0.3);
     border-radius: 23px;
+    transition: 0.5s;
 }
 
 .custom_btn a {
@@ -532,6 +533,10 @@ header .menu_btn.text span {
     max-width: 45%;
     padding: 0;
     margin-bottom: 60px;
+}
+
+.products .product_card:nth-child(2) {
+    /*margin-top: 5%;*/
 }
 
 .products .product_card .title {
@@ -800,6 +805,12 @@ header .menu_btn.text span {
     height: 80vh;
 }
 
+.contact .main_title {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: fadeInUp;
+}
+
 .contact .information {
     font-family: Comfortaa;
     font-style: normal;
@@ -810,12 +821,18 @@ header .menu_btn.text span {
     color: #384262;
     max-width: 900px;
     margin: 30px auto;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-name: fadeInUp;
 }
 
 .contact .contact_form {
     max-width: 700px;
     margin: 0 auto;
     padding-top: 80px;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-name: fadeInUp;
 }
 
 .contact .contact_form button.custom_btn {
@@ -1154,9 +1171,7 @@ header .menu_btn.active:after {
     opacity: 1;
 }
 
-
 /*page about_us______________________________________________________________________________________________*/
-
 
 .page_about_us .about_top {
     position: relative;
@@ -1196,6 +1211,9 @@ header .menu_btn.active:after {
     line-height: 64px;
     text-align: center;
     color: #384262;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-name: fadeInUp;
 }
 
 .page_about_us .about_info_section .sub_title {
@@ -1205,10 +1223,18 @@ header .menu_btn.active:after {
     color: #384262;
     margin-top: 30px;
     max-width: 535px;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+}
+
+.page_about_us .about_info_section .photo {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: fadeIn;
 }
 
 /*.about_us_team */
-
 
 .page_about_us .about_us_team {
     padding: 100px 0;
@@ -1225,6 +1251,9 @@ header .menu_btn.active:after {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 40px;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
 }
 
 .page_about_us .about_us_team .person .photo {
@@ -1257,10 +1286,21 @@ header .menu_btn.active:after {
     color: #FFB948;
 }
 
+.page_about_us .main_title {
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-name: fadeInUp;
+}
+
+.page_about_us .content {
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+}
+
 .page_about_us .contact {
     margin-top: 0;
 }
-
 
 /*project_page_______________________________________________________________________________________*/
 .project_page .project_top {
@@ -1280,6 +1320,11 @@ header .menu_btn.active:after {
     line-height: 64px;
     text-align: center;
     color: #384262;
+
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-name: fadeInUp;
+
 }
 
 .project_page .project_top .sub_title {
@@ -1289,12 +1334,237 @@ header .menu_btn.active:after {
     color: #384262;
     margin: 30px 0 40px 0;
     max-width: 535px;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
 }
+
 .project_page .project_top .custom_btn {
     background: #FFFFFF;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: fadeInUp;
 }
+
 .project_page .project_top .custom_btn a {
     font-size: 14px;
     line-height: 16px;
     color: #384262;
+}
+
+.project_page .project_top .custom_btn:hover {
+    background: #7EDCBF;
+}
+
+.project_page .project_top .custom_btn:hover a {
+    color: #fff;
+}
+
+/*mission*/
+
+.project_page .mission .col-md-6 {
+    padding: 0;
+}
+
+.project_page .mission .main_title {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+}
+
+.project_page .mission .left_side {
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInLeft;
+}
+
+.project_page .mission .right_side {
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInRight;
+}
+
+.project_page .mission .title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #384262;
+    margin-bottom: 20px;
+}
+
+.project_page .mission .description {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
+    color: #384262;
+    max-width: 700px;
+}
+
+.project_page .mission .custom_btn {
+    margin: 40px 0 0 20px;
+}
+
+.project_page .mission .list .item {
+    margin-bottom: 15px;
+}
+
+.project_page .mission .list {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    color: #384262;
+    max-width: 200px;
+
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+}
+
+/*quote_container*/
+
+@media (min-width: 1900px) {
+
+    .project_page .quote .container {
+        max-width: 958px;
+    }
+}
+
+.project_page .quote {
+    padding: 100px 0;
+}
+
+.project_page .quote .container {
+    position: relative;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeIn;
+}
+
+.project_page .quote .container:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 27.43px;
+    background-image: url(../images/quote_top.png);
+}
+
+.project_page .quote .container:after {
+    position: absolute;
+    content: " ";
+    bottom: -30px;
+    right: 0;
+    width: 32px;
+    height: 27.43px;
+    background-image: url(../images/quote_bottom.png);
+}
+
+.project_page .quote .name {
+    text-align: center;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+    color: #384262;
+}
+
+.project_page .quote .position {
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(56, 66, 98, 0.5);
+    margin: 10px 0 17px 0;
+}
+
+.project_page .quote .description {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #384262;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project_page .image {
+    text-align: center;
+    padding: 100px 0;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+}
+
+.project_page .main_page {
+    text-align: center;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+}
+
+.project_page .main_page .title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: left;
+    color: #384262;
+    margin-left: 24%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.project_page .main_page .title:after {
+    position: absolute;
+    content: "";
+    bottom: 8px;
+    left: -85px;
+    width: 60px;
+    border-bottom: 4px solid #384262;
+}
+
+/*All Projects page */
+
+.all_projects_page .main_title {
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+}
+
+.all_projects_page .filter {
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+}
+
+.all_projects_page ul {
+    display: flex;
+    list-style: none;
+    margin: 30px 0 50px 0;
+}
+
+.all_projects_page ul li {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
+    color: #384262;
+    margin-right: 30px;
+}
+
+.all_projects_page ul li.active {
+    color: #7EDCBF;
+}
+
+.all_projects_page ul li a:hover {
+    color: #7EDCBF;
 }

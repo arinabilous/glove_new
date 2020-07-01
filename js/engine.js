@@ -52,8 +52,8 @@
             animate();
 
             function animate() {
-                element_warm.transform(([x, y, oy]) => [x, oy + 4 * Math.sin(x / 48 + offset), oy]);
-                offset += 0.2;
+                element_warm.transform(([x, y, oy]) => [x, oy + 4 * Math.sin(x / 98 + offset), oy]);
+                offset += 0.1;
                 requestAnimationFrame(animate);
             }
         });
