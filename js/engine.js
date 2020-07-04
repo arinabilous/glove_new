@@ -46,13 +46,13 @@
         const svg = document.querySelectorAll('.svg-element');
         svg.forEach(element => {
             const element_warm = new Warp(element);
-            element_warm.interpolate(4);
+            element_warm.interpolate(6);
             element_warm.transform(([x, y]) => [x, y, y]);
             let offset = 0;
             animate();
 
             function animate() {
-                element_warm.transform(([x, y, oy]) => [x, oy + 4 * Math.sin(x / 98 + offset), oy]);
+                element_warm.transform(([x, y, oy]) => [x, oy + 6 * Math.sin(x / 98 + offset), oy]);
                 offset += 0.1;
                 requestAnimationFrame(animate);
             }
