@@ -2175,7 +2175,7 @@ header .menu_btn.active:after {
     .navigation.navigation--scrolled {
         padding: 40px;
         background: #fff;
-        z-index: 1050;
+        z-index: 95;
     }
 
     .navigation .navigation_container {
