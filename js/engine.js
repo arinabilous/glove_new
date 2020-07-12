@@ -18,6 +18,7 @@
             speed: 1000
         });
 
+
         $('.menu_btn').on('click', function () {
             $('.navigation').toggleClass('navigation--scrolled');
 
@@ -34,9 +35,18 @@
             }
 
         });
-        if ($('header .sub-menu').children('li').length > 10) {
-            $('header .sub-menu').children('li:nth-child(11)').parent().addClass('active');
+
+
+        if ($('header ul').children('li').length > 10) {
+            $('header ul').children('li:nth-child(11)').parent().addClass('active');
         }
+
+        $('.navigation .menu li').mouseenter(function () {
+            $(this).children('ul').addClass('sub-menu')
+        });
+        $('.navigation .menu li').mouseleave(function () {
+            $(this).children('ul').removeClass('sub-menu')
+        });
 
         if ($('body .content').hasClass('.page')) {
             alert(5);
@@ -53,11 +63,10 @@
 
             function animate() {
                 element_warm.transform(([x, y, oy]) => [x, oy + 6 * Math.sin(x / 98 + offset), oy]);
-                offset += 0.1;
+                offset += 0.05;
                 requestAnimationFrame(animate);
             }
         });
-
 
         /***********************************/
 
