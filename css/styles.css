@@ -61,7 +61,7 @@ html {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1170px;
+        max-width: 1200px;
     }
 }
 
@@ -396,10 +396,15 @@ header .menu_btn.text span {
     justify-content: space-around;
 }
 
-.top_section .container {
+.top_section .container_top {
     position: relative;
     z-index: 50;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
 }
+
 
 .top_section .circle-bg {
     fill: rgba(255, 255, 255, 0.5);
@@ -472,12 +477,25 @@ header .menu_btn.text span {
 /*}*/
 
 .top_section .slick-next {
-    bottom: -30%;
-    left: 0%;
+    bottom: 0%;
+    left: 20px;
     position: absolute;
     opacity: 1;
     z-index: 100;
 }
+
+
+@media (min-width: 1280px) and (max-width: 2000px) {
+    .top_section .container_top {
+        padding-left: 15%;
+    }
+
+    .top_section .slick-next {
+        left: -15%;
+        bottom: -30%;
+    }
+}
+
 
 .top_section .slick-prev.slick-disabled {
     z-index: -1;
@@ -490,17 +508,9 @@ header .menu_btn.text span {
     display: none;
 }
 
-.top_section .slick-next.slick-disabled {
-    /*z-index: -1;*/
-    /*opacity: 0;*/
-}
 
 @media (min-width: 1441px) {
 
-    /*.top_section .slick-next {*/
-    /*    bottom: -65%;*/
-    /*    left: -25%;*/
-    /*}*/
     .top_section .slick-prev {
         bottom: -65%;
         left: -25%;
@@ -509,15 +519,27 @@ header .menu_btn.text span {
 }
 
 
-/*.top_section .main_slider .slick-prev {*/
-/*    display: none !important;*/
-/*}*/
-
 .top_section .row {
     position: relative;
     z-index: 2;
     margin: 0 auto;
     width: 100%;
+    align-items: stretch;
+}
+
+
+.main_slider .top_info_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_slider .image_box {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .top_dots {
@@ -531,8 +553,8 @@ header .menu_btn.text span {
 
 .top_svg:nth-child(1) {
     position: absolute;
-    top: 6%;
-    right: 4%;
+    top: 4%;
+    right: 2%;
     z-index: 1;
 }
 
@@ -785,6 +807,11 @@ header .menu_btn.text span {
     line-height: 32px;
     color: #384262;
     padding: 60px 0 10px 0;
+}
+
+.products .product_card .title a:hover {
+    color: #384262;
+    text-decoration: none;
 }
 
 .products .product_card .sub_title {
@@ -1619,6 +1646,7 @@ header .menu_btn.active:after {
 .project_page .project_top {
     height: 60vh;
     width: 100%;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2212,7 +2240,8 @@ header .menu_btn.active:after {
     }
 
     .top_section .custom_btn a {
-        background: #fff;
+        /*background: #fff;*/
+        padding: 10px 30px;
     }
 
     .top_info_section .sub_title {
@@ -2225,7 +2254,7 @@ header .menu_btn.active:after {
 
     .top_section {
         height: 100%;
-        padding-top: 80px;
+        padding-top: 40px;
     }
 
     .top_section .custom_btn {
@@ -2573,11 +2602,196 @@ header .menu_btn.active:after {
     .nav_lang .dropdown-menu {
         left: 12px !important;
     }
+
+
+    .footer_col:nth-child(1) .footer_title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 260px;
+    }
+
+    .footer_col {
+        text-align: center;
+    }
+
+    .footer_social {
+
+        margin: 30px auto 0;
+    }
+
+    .contact .svg {
+        display: none;
+    }
+    .top_svg:nth-child(1){
+        top: 44%;
+    }
+    .main_slider .top_info_section{
+        margin-bottom: 50px;
+    }
 }
 
 @media (min-width: 320px)  and  (max-width: 380px) {
     .reviews .svg {
-        right: -90%;
-        top: 90vh;
+        display: none;
     }
+}
+
+@media (min-width: 320px) and (max-width: 1280px) {
+    .our_services .service_card .icon,
+    .our_services .title {
+        text-align: center;
+    }
+
+    .main_slider .image_box {
+        min-height: 30vh;
+        margin: 0 auto;
+    }
+
+    .top_section img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .reviews .image {
+        margin-top: 10%;
+    }
+
+    .reviews .svg {
+        top: 20%;
+    }
+
+    .reviews .slick-dots {
+        right: 0;
+        left: 0;
+        bottom: -10%;
+    }
+
+    body .top_section {
+        height: 100%;
+        padding-top: 10%;
+    }
+
+    .top_svg:nth-child(1) svg {
+        height: 50vh;
+    }
+
+}
+
+@media (min-width: 991px) and (max-width: 1280px) {
+    .reviews .image {
+        margin-top: 10%;
+    }
+
+    body .top_section {
+        height: 100%;
+        padding-top: 15%;
+    }
+
+    .top_svg:nth-child(1) svg {
+        height: 50vh;
+    }
+
+    .reviews .svg {
+        right: 3%;
+        top: 10%;
+    }
+
+    .reviews .slick-dots {
+        right: 0;
+        left: 0;
+        bottom: -10%;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1440px) {
+    .top_info_section .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .top_info_section .sub_title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .social {
+        top: 70vh;
+    }
+
+    .top_svg:nth-child(1) {
+        top: 5%;
+    }
+
+    .top_section img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 991px) {
+    .navigation__logo {
+        top: 20px;
+        left: 20px;
+    }
+
+    .menu_btn {
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu_btn:after, .social:before {
+        opacity: 0;
+    }
+
+    .nav_btn_x {
+        bottom: 50px;
+        right: -20%;
+        opacity: 1;
+    }
+
+    .nav_lang {
+        top: 25px;
+        right: 65px;
+    }
+
+    header .menu_btn.text span {
+        opacity: 0;
+    }
+
+    #button-nav span {
+        opacity: 1;
+    }
+
+    .social {
+        top: 60vh;
+        right: 20px;
+        min-height: 120px;
+    }
+
+    .navigation .navigation_container {
+        margin-top: 0;
+    }
+
+    .navigation.navigation--scrolled .navigation__menu .menu li a.link {
+        padding: 15px 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .project_page .project_top {
+        min-height: 60vh;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .project_page .image {
+        padding: 0 0 50px 0;
+    }
+}
+
+.container {
+    padding: 0 20px;
 }
