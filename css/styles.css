@@ -2818,8 +2818,8 @@ header .menu_btn.active:after {
 
 
 .imac {
-    width: 100%;
-    max-width: 40vw;
+    max-width: 100%;
+    width: 40vw;
     perspective: 250px;
     position: relative;
     overflow: hidden;
@@ -2827,7 +2827,6 @@ header .menu_btn.active:after {
 
 .screen {
     height: 45vh;
-
     background-size: cover;
     box-sizing: border-box;
     border: 14px solid #E5E6EA;
@@ -2862,7 +2861,9 @@ header .menu_btn.active:after {
     display: block;
     margin: 0 auto;
     background: #ECEDEF;
-    transform: translatey(12px);    top: auto;
+    transform: translatey(12px); 
+    top: auto;
+    fill: #C1C3CB;
 }
 
 .stand {
@@ -2877,4 +2878,87 @@ header .menu_btn.active:after {
     transform: rotatex(100deg);
     margin-top: -26px;
     box-shadow: 0 4px 0 0 #D5D5D5;
+}
+
+@media (min-width: 1281px) and (max-width: 1440px){
+    .top_svg:nth-child(1) {
+        top: 7%;
+    }
+    .top_svg:nth-child(1) svg {
+        height: 75vh;
+    }
+    .screen {
+    height: 40vh;
+    }
+    .imac {
+        width: 35vw;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    .top_svg:nth-child(1) {
+        top: 20%;
+    }
+    .top_svg:nth-child(1) svg {
+        height: 75vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  
+.imac {
+        width: 100vw;
+    }
+    .screen {
+    height: 30vh;
+    margin-top: 20px;
+    }
+    .stand {
+    height: 75px;
+    }
+  
+}
+@media (min-width: 481px) and (max-width: 991px) {
+
+.imac {
+
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .screen {
+
+    margin-top: 20px;
+        min-height: 350px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .imac {
+        width: 100vw;
+    }
+    .screen {
+    height: 220px;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 10px solid #E5E6EA;
+    border-top: 15px solid #E5E6EA;
+    }
+    .facetime__camera {
+        margin-top: -9px;
+    }
+    .chin {
+        height: 50px;
+    }
+    .chin .logo {
+    width: 1em;
+}
+
+    .stand {
+    height: 75px;
+    }
+    .top_svg:nth-child(1){
+        display: none;
+    }
+  
 }
