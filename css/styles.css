@@ -872,6 +872,10 @@ header .menu_btn.text span {
     position: relative;
 }
 
+.our_services .container {
+    overflow: hidden;
+} 
+
 .our_services .svg {
     position: absolute;
     left: -30%;
